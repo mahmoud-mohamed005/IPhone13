@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>IPhone13</title>
+</head>
+<body>
+    <heaader>
+        <nav>
+            <div class="logo">
+                <img src="Images/PngItem_591019.png">
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">IPhone</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Cart</a></li>
+            </ul>
+        </nav>
+    </heaader>
+    <section class="class-1">
+        <div class="overlay"></div>
+        <div>
+            <img src="Images/[CITYPNG.COM]Apple iPhone 13 Front View - 1443x993.png" class="mobile">
+        </div>
+        <div id="circle">
+            <div class="feature one">
+                <img src="Images/camera.png">
+                <div>
+                    <h1>Camera</h1>
+                    <p>12MP Wide and Ultra Wide cameras<br></p>
+                </div>
+            </div>
+            <div class="feature two">
+                <img src="Images/processor.png">
+                <div>
+                    <h2>Processor</h2>
+                    <p>A15 Bionic chip</p>
+                </div>
+            </div>
+            <div class="feature three">
+                <img src="Images/display.png">
+                <div>
+                    <h3>Display</h3>
+                    <p>Super Retina XDR display</p>
+                </div>
+            </div>
+            <div class="feature four">
+                <img src="Images/battery.png">
+                <div>
+                    <h4>Battery</h4>
+                    <p>Audio playback: Up to 75 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="controls">
+            <img src="Images/arrow.png" id="upbtn">
+            <h5>Features</h5>
+            <img src="Images/arrow.png" id="downbtn">
+        </div>
+    </section>
+    <script>
+        var circle = document.getElementById("circle");
+        var upbtn = document.getElementById("upbtn");
+        var downbtn = document.getElementById("downbtn");
+
+        var rotatevalue = circle.style.transform;
+        var rotatesum;
+
+        upbtn.onclick = function(){
+            rotatesum = rotatevalue + "rotate(-90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum;
+        }
+        downbtn.onclick = function(){
+            rotatesum = rotatevalue + "rotate(90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum;
+        }
+    </script>
+    
+</body>
+</html>
